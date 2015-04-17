@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A386a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="0wA-ag-rwC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="HGE-Eg-hdq">
+            <objects>
+                <viewController id="8iB-3y-xmK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ci3-g8-bnX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="1qF-L2-x2S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUR-VJ-FFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8" y="-1021"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="so4-3F-8OF">
+            <objects>
+                <viewController id="KG0-AF-J6l" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NSF-zb-DjU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="5NI-m3-4EV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Fn-Hd-s6Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8" y="-1651"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="XEg-P1-zyA">
+            <objects>
+                <tabBarController id="0wA-ag-rwC" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="eUi-hH-3wy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KG0-AF-J6l" kind="relationship" relationship="viewControllers" id="OPZ-e8-xB1"/>
+                        <segue destination="8iB-3y-xmK" kind="relationship" relationship="viewControllers" id="pvM-Oh-L0V"/>
+                        <segue destination="Mth-NW-39f" kind="relationship" relationship="viewControllers" id="9pD-1G-u5o"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jiZ-Jg-gzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-586" y="-310"/>
+        </scene>
+        <!--Weather-->
+        <scene sceneID="eEW-VA-CBM">
+            <objects>
+                <navigationController id="Mth-NW-39f" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Weather" id="a1U-rM-mb4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gzt-C7-BbK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YJa-O3-HIc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YGk-YJ-A9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.5333333333333332" y="-309.56"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SFj-zp-zgV">
+                                <rect key="frame" x="16" y="269" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Minsk"/>
+                                <connections>
+                                    <action selector="showWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfd-Ks-ExJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lbb-WM-I8o"/>
+                    <connections>
+                        <segue destination="By6-jV-j64" kind="push" identifier="ShowWeather" id="3UF-rW-f9l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="436.80000000000001" y="-309.56"/>
+        </scene>
+        <!--WeatherVC-->
+        <scene sceneID="bsb-UZ-zCB">
+            <objects>
+                <viewController id="By6-jV-j64" customClass="WeatherVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6hA-Rr-7Yj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VXS-0v-dV2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdg-nh-XkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868.26666666666665" y="-309.56"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
